@@ -1,0 +1,357 @@
+:root {
+    --primary-bgc-color: #fff;
+    --secondary-bgc-color:#2E2F42;
+    --third-bgc-color: #F4F4FD;
+    --primary-text-color: #2E2F42;
+    --secondary-text-color:#434455;
+    --hero-text-color: #fff;
+    --web-logo-color: #4D5AE5;
+    --nav-active-color: #404BBF;
+    --footer-studio-color: #F4F4FD;
+    --footer-text-color: #E7E9FC;
+    --order-button-color: #4D5AE5;
+    --order-text-color: #FFF;
+    --order-active-button-color: #404BBF;
+    --buttons-bgc-color: #F4F4FD;
+    --buttons-text-color: #4D5AE5;
+    --buttons-active-bgc-color: #404BBF;
+    --buttons-active-text-color: #fff;
+}
+
+/*reset start*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--primary-bgc-color);
+    color: var(--primary-text-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+}
+
+/*reset end*/
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+/*Logo*/
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.logo {
+    margin-right: 76px;
+
+    color: var(--primary-text-color);
+
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.logo-text {
+    color: var(--web-logo-color);
+}
+
+/*Navigation*/
+
+.nav-block {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-wrapper {
+    display: flex;
+    margin-right: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.nav-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+  color: var(--nav-active-color);
+}
+
+/*address*/
+
+.address-block {
+    display: flex;
+    gap: 40px;
+}
+
+.contacts-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--secondary-text-color);
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--nav-active-color);
+}
+
+/*Portfolio page*/
+/*Buttons*/
+
+.portfolio-section {
+    padding-top: 96px;
+}
+
+.portfolio-list {
+    row-gap: 48px;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+    
+}
+.button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background-color: var(--buttons-bgc-color);
+    color: var(--buttons-text-color);
+
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    line-height: 1.5;
+
+    border: 1px solid var(--footer-text-color);
+    border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--buttons-active-bgc-color);
+    color: var(--buttons-active-text-color);
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: var(--secondary-bgc-color);
+}
+
+.footer-content {
+    width: 264px;
+}
+
+.logo-1 {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    color: var(--footer-studio-color);
+
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+}
+
+.footer-text {
+    color: var(--footer-text-color);
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*Studio page*/
+/*Hero*/
+
+.hero {
+    padding: 188px 0;
+    background-color: var(--secondary-bgc-color);
+}
+
+.hero-title {
+    width: 496px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    padding: 0;
+
+    color: var(--hero-text-color);
+
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.order {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 0;
+
+    background-color: var(--order-button-color);
+    color: var(--order-text-color);
+
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.order:hover,
+.order:focus {
+    background-color: var(--order-active-button-color);
+    color: var(--order-text-color);
+    cursor: pointer;
+}
+
+/*Benefits*/
+
+.benefits {
+    padding-bottom: 0;
+}
+
+.flex-list {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex-basis: calc((100% - (24px * 3)) / 4);
+}
+
+.section-subtitle {
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.section-text {
+    color: var(--secondary-text-color);
+    
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*What we are doing*/
+
+.title {
+    margin-bottom: 72px;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+/*Our team*/
+
+.card-content {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--primary-bgc-color) ;
+}
+
+.team {
+    background-color: var(--third-bgc-color);
+}
+
+.portfolio-card {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--footer-text-color);
+            border-right: 1px solid var(--footer-text-color);
+            border-left: 1px solid var(--footer-text-color);
+}
