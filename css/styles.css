@@ -295,6 +295,17 @@ img {
 
 /*Benefits*/
 
+.benefits-svg {
+    width: 264px;
+    height: 112px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background-color: var(--third-bgc-color);
+    border-radius: 4px;
+
+    outline: 2px solid red;
+}
+
 .benefits-list {
     display: flex;
     gap: 0;
@@ -302,35 +313,6 @@ img {
 
 .benefits-item:not(:last-child) {
     margin-right: 24px;
-}
-
-.benefits-item::before {
-    content: "";
-    display: block;
-    height: 112px;
-    width: 264px;
-    margin-bottom: 8px;
-    background-color: var(--third-bgc-color);
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-antenna::before {
-    background-image: url();
-
-}
-
-.icon-clock::before {
-    background-image: url();
-}
-
-.icon-diagram::before {
-    background-image: url();
-}
-
-.icon-astronaut::before {
-    background-image: url();
 }
 
 .benefits {
@@ -354,6 +336,8 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    outline: 2px solid red;
 }
 
 .section-text {
@@ -361,6 +345,8 @@ img {
 
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    outline: 2px solid red;
 }
 
 /*What we are doing*/
@@ -387,6 +373,33 @@ img {
 }
 
 /*Our team*/
+
+.social-svg {
+    width: 16px;
+    height: 16px;
+}
+
+.social-flex {
+    display: flex;
+    margin-top: 8px;
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--order-button-color);
+    padding: 12px;
+}
+
+.social-item:hover {
+    background-color: var(--buttons-active-bgc-color);
+    cursor: pointer;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 24px;
+}
 
 .team-list {
     display: flex;
@@ -416,6 +429,7 @@ img {
 
 .team {
     background-color: var(--third-bgc-color);
+    padding-bottom: 110px;
 }
 
 /*Customers*/
@@ -448,6 +462,11 @@ img {
 
     border: 1px solid var(--border-customers-color);
     border-radius: 4px;
+}
+
+.customers:hover {
+    border: 1px solid var(--nav-active-color);
+    cursor: pointer;
 }
 
 .customers-flex {
