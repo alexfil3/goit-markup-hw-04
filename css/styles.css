@@ -209,6 +209,17 @@ img {
 
 /*Footer*/
 
+.footer-box {
+    display: flex;
+}
+
+.footer-social {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: red;
+}
+
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -434,8 +445,16 @@ img {
 
 /*Customers*/
 
+.ya-and-co {
+    fill: red;
+}
+
 .company {
     padding: 9px 30px 6px;
+}
+
+.company:hover {
+    fill: red;
 }
 
 .foster-peters {
