@@ -1,9 +1,9 @@
 :root {
     --primary-bgc-color: #fff;
-    --secondary-bgc-color:#2E2F42;
+    --secondary-bgc-color: #2E2F42;
     --third-bgc-color: #F4F4FD;
     --primary-text-color: #2E2F42;
-    --secondary-text-color:#434455;
+    --secondary-text-color: #434455;
     --hero-text-color: #fff;
     --web-logo-color: #4D5AE5;
     --nav-active-color: #404BBF;
@@ -16,6 +16,7 @@
     --buttons-text-color: #4D5AE5;
     --buttons-active-bgc-color: #404BBF;
     --buttons-active-text-color: #fff;
+    --border-customers-color: #8E8F99;
 }
 
 /*reset start*/
@@ -80,6 +81,7 @@ img {
 .header-container {
     display: flex;
     align-items: center;
+
 }
 
 /*Logo*/
@@ -97,7 +99,7 @@ img {
 
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.03em;
-    
+
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -134,9 +136,9 @@ img {
     letter-spacing: 0.02em;
 }
 
-.nav-link:hover, 
+.nav-link:hover,
 .nav-link:focus {
-  color: var(--nav-active-color);
+    color: var(--nav-active-color);
 }
 
 /*address*/
@@ -178,8 +180,9 @@ img {
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
-    
+
 }
+
 .button {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -248,8 +251,8 @@ img {
     height: 600px;
     margin-right: auto;
     margin-left: auto;
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-image.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-image.jpg);
 }
 
 .hero-title {
@@ -292,6 +295,44 @@ img {
 
 /*Benefits*/
 
+.benefits-list {
+    display: flex;
+    gap: 0;
+}
+
+.benefits-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.benefits-item::before {
+    content: "";
+    display: block;
+    height: 112px;
+    width: 264px;
+    margin-bottom: 8px;
+    background-color: var(--third-bgc-color);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-antenna::before {
+    background-image: url();
+
+}
+
+.icon-clock::before {
+    background-image: url();
+}
+
+.icon-diagram::before {
+    background-image: url();
+}
+
+.icon-astronaut::before {
+    background-image: url();
+}
+
 .benefits {
     padding-bottom: 0;
 }
@@ -317,15 +358,19 @@ img {
 
 .section-text {
     color: var(--secondary-text-color);
-    
+
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 /*What we are doing*/
 
-.title {
-    margin-bottom: 72px;
+.what-list {
+    display: flex;
+    
+    margin-right: auto;
+    margin-left: auto;
+    gap: 0;
 }
 
 .section-title {
@@ -334,9 +379,29 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.list-item:not(:last-child) {
+    margin-right: 24px;
 }
 
 /*Our team*/
+
+.team-list {
+    display: flex;
+}
+
+.box-content {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.box-content:not(:last-child) {
+    margin-right: 24px;
+}
 
 .card-content {
     text-align: center;
@@ -346,19 +411,58 @@ img {
     padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
 
-    background-color: var(--primary-bgc-color) ;
+    background-color: var(--primary-bgc-color);
 }
 
 .team {
     background-color: var(--third-bgc-color);
 }
 
+/*Customers*/
+
+.company {
+    padding: 9px 30px 6px;
+}
+
+.foster-peters {
+    padding: 9px 9px 6px 11px;
+}
+
+.tag-line {
+    padding: 7px 4px 5px 6px;
+}
+
+.icon-size {
+    width: 104px;
+    height: 56px;
+}
+
+.customers-section {
+    padding-top: 130px;
+}
+
+.customers {
+    padding: 16px 32px;
+    width: 168px;
+    height: 88px;
+
+    border: 1px solid var(--border-customers-color);
+    border-radius: 4px;
+}
+
+.customers-flex {
+    display: flex;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .portfolio-card {
-            padding-left: 16px;
-            padding-right: 16px;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            border-bottom: 1px solid var(--footer-text-color);
-            border-right: 1px solid var(--footer-text-color);
-            border-left: 1px solid var(--footer-text-color);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--footer-text-color);
+    border-right: 1px solid var(--footer-text-color);
+    border-left: 1px solid var(--footer-text-color);
 }
