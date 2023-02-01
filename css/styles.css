@@ -60,7 +60,11 @@ body {
     font-size: 16px;
 }
 
-/*Studio page*/
+img {
+    display: block;
+}
+
+/*Studio page start*/
 
 /*Header start*/
 
@@ -459,94 +463,16 @@ body {
 
 /*Footer end*/
 
+/*Studio page end*/
 
 
 
+/*Portfolio page start*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.flex-list {
-    display: flex;
-    flex-basis: calc((100% - (24px * 2)) / 3);
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.flex-item {
-    flex-basis: calc((100% - (24px * 3)) / 4);
-}
-
-
-
-
-
-
-.portfolio-card {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid var(--footer-text-color);
-    border-right: 1px solid var(--footer-text-color);
-    border-left: 1px solid var(--footer-text-color);
-}
-
-.portfolio-link:hover {
-    display: block;
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-
-
-
-
-
-
-
-img {
-    display: block;
-}
-
-
-
-
-/*Portfolio page*/
-/*Buttons*/
+/*Portfolio main start*/
 
 .portfolio-section {
     padding-top: 96px;
-}
-
-.portfolio-list {
-    row-gap: 48px;
 }
 
 .flex-button {
@@ -554,22 +480,15 @@ img {
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
-
 }
 
 .button {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 24px;
-    padding-right: 24px;
-
+    padding: 12px 24px;
     background-color: var(--buttons-bgc-color);
     color: var(--buttons-text-color);
-
     letter-spacing: 0.04em;
     font-weight: 500;
     line-height: 1.5;
-
     border: 1px solid var(--footer-text-color);
     border-radius: 4px;
 }
@@ -582,4 +501,29 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.flex-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
 
+.portfolio-link:hover {
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-card {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    border-bottom: 1px solid var(--footer-text-color);
+    border-right: 1px solid var(--footer-text-color);
+    border-left: 1px solid var(--footer-text-color);
+}
+
+/*Portfolio main end*/
+
+/*Portfolio page end*/
